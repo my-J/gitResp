@@ -1,21 +1,3 @@
-package com.xiaoyoumanman.system;
-
-import com.jfinal.config.Constants;
-import com.jfinal.config.Handlers;
-import com.jfinal.config.Interceptors;
-import com.jfinal.config.JFinalConfig;
-import com.jfinal.config.Plugins;
-import com.jfinal.config.Routes;
-import com.jfinal.core.JFinal;
-import com.jfinal.json.FastJsonFactory;
-import com.jfinal.kit.PathKit;
-import com.jfinal.kit.PropKit;
-import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
-import com.jfinal.plugin.activerecord.dialect.AnsiSqlDialect;
-import com.jfinal.plugin.druid.DruidPlugin;
-import com.jfinal.template.Engine;
-import com.xiaoyoumanman.system.model._MappingKit;
-import com.xiaoyoumanman.system.routes.AdminRoutes;
 
 public class mainConfig extends JFinalConfig {
 	@Override
