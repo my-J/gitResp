@@ -1,29 +1,4 @@
 
-public class mainConfig extends JFinalConfig {
-	@Override
-	public void configConstant(Constants me) {
-		PropKit.use("a_little_config.txt");
-		me.setDevMode(PropKit.getBoolean("devMode", false));
-		me.setJsonFactory(new FastJsonFactory());
-
-	}
-
-	@Override
-	public void configRoute(Routes me) {
-		me.add(new AdminRoutes());
-
-	}
-
-	@Override
-	public void configEngine(Engine me) {
-		me.setDevMode(true);
-		me.getDevMode();
-		me.setBaseTemplatePath(PathKit.getWebRootPath() + "/WEB-INF/jfinal");
-		me.addSharedFunction("/common/_layout.html");
-		me.addSharedFunction("/common/_form_layout.html");
-		me.addSharedFunction("/common/_paginate.html");
-
-	}
 
 	@Override
 	public void configPlugin(Plugins me) {
